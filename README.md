@@ -1,2 +1,2 @@
 # SSCL
-A Self-Supervised Learning Framework for Aspect Detection
+A Self-Supervised Contrastive Learning Framework for Aspect Detection
