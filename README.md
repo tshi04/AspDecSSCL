@@ -1,3 +1,4 @@
-# AspDecSSCL - A Self-Supervised Contrastive Learning Framework for Aspect Detection
+# AspDecSSCL 
+## A Self-Supervised Contrastive Learning Framework for Aspect Detection
 
 
