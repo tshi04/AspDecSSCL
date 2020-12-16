@@ -42,11 +42,15 @@ Please download processed dataset from here. Place them along side with AapDecSS
 
 # Usuage
 
+### Prepare word and aspect embeddings.
+
 ```Train word2vec:``` python3 run.py --task word2vec
 
 ```Run Kmeans:``` python3 run.py --task kmeans
 
 ```Check Kmeans Keywords``` python3 run.py --task kmeans-keywords
+
+### Self-supervised Learning (Teacher Model)
 
 ```SSCL Training``` python3 run.py --task sscl-train
 
@@ -61,6 +65,8 @@ Before validation, you need to perform ```aspect mapping```. There is a file ```
 ```SSCL teacher``` python3 run.py --task sscl-teacher
 
 ```SSCL clean results``` python3 run.py --task sscl-clean
+
+### Student Model
 
 ```SSCLS training``` python3 run.py --task student-train
 
