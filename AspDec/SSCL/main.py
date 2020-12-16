@@ -102,7 +102,7 @@ parser.add_argument('--thresh_aspect', type=float, default=1.6,
 parser.add_argument('--thresh_general', type=float, default=1.0,
                     help='general threshold')
 parser.add_argument('--none_type', type=str2bool, default=True,
-                    help='consider none type in evaluation.')
+                    help='consider none/general type in evaluation.')
 
 args = parser.parse_args()
 
