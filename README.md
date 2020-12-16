@@ -40,7 +40,7 @@ Please download processed dataset from here. Place them along side with AapDecSS
 |--- nats_results (results, automatically build)
 ```
 
-# Usuage
+# Train your model from scratch
 
 ### Prepare word and aspect embeddings.
 
@@ -77,6 +77,10 @@ Before validation, you need to perform ```aspect mapping```. There is a file ```
 ```SSCLS testing``` python3 run.py --task student-evaluate
 
 ```SSCLS clean``` python3 run.py --task student-clean
+
+# Use Pretrained Model
+
+Coming Soon.
 
 ## Citation
 
