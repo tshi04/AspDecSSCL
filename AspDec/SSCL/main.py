@@ -119,12 +119,9 @@ if args.task[:6] == 'kmeans':
         from .kmeans import get_cluster_keywords
         run_kmeans(args)
         get_cluster_keywords(args)
-    if args.task == 'kmeans_keywords':
+    if args.task == 'kmeans-keywords':
         from .kmeans import get_cluster_keywords
         get_cluster_keywords(args)
-    if args.task == 'kmeans_evaluate':
-        from .evaluation import eval_aspect_coherence
-        eval_aspect_coherence(n_keywords=args.n_keywords)
 
 if args.task[:4] == 'sscl':
     import torch
