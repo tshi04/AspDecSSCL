@@ -3,9 +3,8 @@
 Please contact tshi@vt.edu
 '''
 import sys
-import numpy as np
-import torch
-from torch.autograd import Variable
+import argparse
+
 
 def show_progress(curr_, total_, message=""):
     '''
@@ -15,6 +14,7 @@ def show_progress(curr_, total_, message=""):
     dstr = '[' + '>'*int(round(prog_/4)) + ' '*(25-int(round(prog_/4))) + ']'
     sys.stdout.write('{}{}% {}\r'.format(dstr, prog_, message))
     sys.stdout.flush()
+
 
 def str2bool(input_):
     '''
@@ -26,6 +26,7 @@ def str2bool(input_):
         return False
     else:
         raise argparse.ArgumentTypeError('Boolean value expected.')
+
 
 def tensor_transformer(seq0, batch_size, beam_size):
     '''
