@@ -32,6 +32,12 @@ Please download processed dataset from here. Place them along side with AapDecSS
 |--- Data
 |    |--- bags_and_cases
 |    |--- restaurant
+|    |    |--- dev.txt
+|    |    |--- test.txt
+|    |    |--- train.txt
+|    |    |--- train_w2v.txt
+|--- cluster_results (results, automatically build)
+|--- nats_results (results, automatically build)
 ```
 
 # Usuage
@@ -43,6 +49,8 @@ Please download processed dataset from here. Place them along side with AapDecSS
 ```Check Kmeans Keywords``` python3 run.py --task kmeans-keywords
 
 ```SSCL Training``` python3 run.py --task sscl-train
+
+Before validation, you need to perform ```aspect mapping```. There is a file ```aspect_mapping.txt``` in ```nats_results```. For ```general```, please change ```nomap``` to ```none```. Other aspects should use their names. Please check ```test.txt``` to validate the names.
 
 ```SSCL validation``` python3 run.py --task sscl-validate
 
