@@ -7,7 +7,7 @@ A Self-Supervised Contrastive Learning Framework for Aspect Detection
 [![image](https://img.shields.io/github/issues/Naereen/StrapDown.js.svg)](https://github.com/tshi04/AspDecSSCL/issues)
 [![image](https://img.shields.io/badge/arXiv-1805.09461-red.svg?style=flat)](https://arxiv.org/abs/2009.09107)
 
-This repository is a pytorch implementation for the following paper:
+This repository is a pytorch implementation for the following AAAI'21 paper:
 
 #### [A Simple and Effective Self-Supervised Contrastive Learning Framework for Aspect Detection](https://arxiv.org/pdf/2009.09107.pdf)
 [Tian Shi](http://people.cs.vt.edu/tshi/homepage/home), 
