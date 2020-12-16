@@ -107,14 +107,6 @@ parser.add_argument('--none_type', type=str2bool, default=False,
 
 args = parser.parse_args()
 
-if args.task == 'tfidf-seeds':
-    from .tfidf_seeds import run_tfidf_seeds
-    run_tfidf_seeds(args)
-
-if args.task == 'bow-test':
-    from .model_bow import run_bow_classfication
-    run_bow_classfication(args)
-
 if args.task == 'doc_term_mat':
     from .kmeans import create_doc_term_matrix
     create_doc_term_matrix(args)

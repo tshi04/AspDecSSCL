@@ -6,17 +6,17 @@ import json
 import os
 
 import numpy as np
-from sklearn.metrics import classification_report, f1_score
+from sklearn.metrics import classification_report
 from tqdm import tqdm
 
 from .utils import calculate_COH, calculate_PMI, read_docs, read_vocab
 
 
 def eval_aspect_coherence(
-        work_dir='../cluster_results', 
+        work_dir='../cluster_results',
         file_term_doc='doc_term_mat.txt',
         file_vocab='vocab.txt',
-        n_keywords=10, weight=[], 
+        n_keywords=10, weight=[],
         file_aspect_weight='aspect_weight.txt'):
 
     docs = read_docs(os.path.join(work_dir, file_term_doc))
@@ -81,7 +81,7 @@ def evaluate_sscl_classification(args):
     if not args.none_type:
         ignore_type.append('none')
 
-    tmp = {wd: -1 for wd in aspect_label if not wd in  ignore_type}
+    tmp = {wd: -1 for wd in aspect_label if not wd in ignore_type}
     label = {}
     for k, wd in enumerate(sorted(list(tmp))):
         label[wd] = k
