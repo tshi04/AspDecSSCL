@@ -5,7 +5,6 @@ Please contact tshi@vt.edu
 import math
 
 import torch
-
 from LeafNATS.modules.attention.attention_multi_head import \
     MultiHeadedAttention_Basic
 from LeafNATS.modules.utils.LayerNormalization import LayerNormalization

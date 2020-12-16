@@ -21,6 +21,7 @@ class modelKD(modelKDBase):
         '''
         build all models.
         '''
+        hidden_size = 768
         if self.args.pretrained_model == 'bert':
             hidden_size = 768
             self.pretrained_models['encoder'] = BertModel.from_pretrained(
