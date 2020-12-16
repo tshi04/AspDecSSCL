@@ -56,6 +56,22 @@ Before validation, you need to perform ```aspect mapping```. There is a file ```
 
 ```SSCL testing``` python3 run.py --task sscl-test
 
+```SSCL evaluate``` python3 run.py --task sscl-evaluate
+
+```SSCL teacher``` python3 run.py --task sscl-teacher
+
+```SSCL clean results``` python3 run.py --task sscl-clean
+
+```SSCLS training``` python3 run.py --task student-train
+
+```SSCLS validation``` python3 run.py --task student-validate
+
+```SSCLS testing``` python3 run.py --task student-test
+
+```SSCLS testing``` python3 run.py --task student-evaluate
+
+```SSCLS clean``` python3 run.py --task student-clean
+
 
 
 
