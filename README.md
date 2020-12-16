@@ -23,6 +23,19 @@ This repository is a pytorch implementation for the following paper:
 - sklearn=0.22.2.post1
 - numpy=1.18.2
 
+# Dataset
+
+Please download processed dataset from here. Place them along side with AapDecSSCL.
+
+```bash
+|--- AspDecSSCL
+|--- Data
+|    |--- bags_and_cases
+|    |--- restaurant
+```
+
+# Usuage
+
 
 
 
