@@ -38,6 +38,17 @@ Please download processed dataset from here. Place them along side with AapDecSS
 
 ```Train word2vec:``` python3 run.py --task word2vec
 
+```Run Kmeans:``` python3 run.py --task kmeans
+
+```Check Kmeans Keywords``` python3 run.py --task kmeans-keywords
+
+```SSCL Training``` python3 run.py --task sscl-train
+
+```SSCL validation``` python3 run.py --task sscl-validate
+
+```SSCL testing``` python3 run.py --task sscl-test
+
+
 
 
 
