@@ -2,14 +2,10 @@
 @author Tian Shi
 Please contact tshi@vt.edu
 '''
-import json
 import os
 
 import numpy as np
 from sklearn.cluster import KMeans
-from tqdm import tqdm
-
-from .utils import calculate_COH, calculate_PMI, read_docs, read_vocab
 
 
 def run_kmeans(args):
@@ -109,36 +105,3 @@ def get_cluster_keywords(args):
         idx = np.argsort(weight_[:, k])[::-1][:args.n_keywords]
         kw = ' '.join([vocab_[j] for j in idx])
         print('{}: {}'.format(k+1, kw))
-
-
-def create_doc_term_matrix(args):
-    '''
-    Get doc term matrix.
-    '''
-    cluster_dir = '../cluster_results'
-    file_term_doc = 'doc_term_mat.txt'
-    file_vocab = 'vocab.txt'
-    # vocabulary
-    print('Vocabulary')
-    fp = open(os.path.join(
-        cluster_dir, file_vocab), 'r')
-    vocab2id = {}
-    for line in fp:
-        itm = line.split()
-        vocab2id[itm[0]] = itm[1]
-    fp.close()
-
-    print('create document term matrix')
-    data_arr = []
-    fp = open(os.path.join(args.data_dir, args.file_train_doc_term), 'r')
-    fout = open(os.path.join(cluster_dir, file_term_doc), 'w')
-    cnt = 0
-    for line in tqdm(fp):
-        itm = json.loads(line)['text_uae']
-        itm = [str(vocab2id[wd]) for wd in itm if wd in vocab2id]
-        itm = ' '.join(itm)
-        fout.write(itm+'\n')
-        cnt += 1
-    fp.close()
-    fout.close()
-    print('Number of documents = {}.'.format(cnt))

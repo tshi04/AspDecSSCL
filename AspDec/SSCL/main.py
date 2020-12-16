@@ -107,9 +107,6 @@ parser.add_argument('--none_type', type=str2bool, default=False,
 
 args = parser.parse_args()
 
-if args.task == 'doc_term_mat':
-    from .kmeans import create_doc_term_matrix
-    create_doc_term_matrix(args)
 
 if args.task == 'word2vec':
     from .word2vec import run_word2vec
