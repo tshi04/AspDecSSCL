@@ -1,2 +1,2 @@
-### Unsupervised Aspect Dection
+### Task Aspect Dection
 from AspDec.SSCL.main import *
