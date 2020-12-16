@@ -36,6 +36,9 @@ Please download processed dataset from here. Place them along side with AapDecSS
 
 # Usuage
 
+```Train word2vec:``` python3 run.py --task word2vec
+
+
 
 
 
