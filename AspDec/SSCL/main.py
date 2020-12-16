@@ -11,10 +11,9 @@ parser = argparse.ArgumentParser()
 Use in the framework and cannot remove.
 '''
 parser.add_argument('--task', default='train',
-                    help='train | test | evaluate | word2vec \
-                        | kmeans | kmeans_eval | term_doc_mat')
+                    help='train | test | others')
 
-parser.add_argument('--data_dir', default='../data/restaurant',
+parser.add_argument('--data_dir', default='../data/bags_and_cases',
                     help='directory that store the data.')
 parser.add_argument('--file_train', default='train.txt', help='train')
 parser.add_argument('--file_dev', default='dev.txt', help='development')
@@ -96,13 +95,13 @@ parser.add_argument('--n_keywords', type=int, default=10,
 parser.add_argument('--file_train_doc_term', default='train_w2v.txt',
                     help='Training')
 # bert simple teacher student
-parser.add_argument('--pretrained_model', default='bert',
+parser.add_argument('--pretrained_model', default='distilbert',
                     help='Use pretrained model name')
-parser.add_argument('--thresh_aspect', type=float, default=1.4,
+parser.add_argument('--thresh_aspect', type=float, default=1.6,
                     help='aspect threshold')
-parser.add_argument('--thresh_general', type=float, default=0.7,
+parser.add_argument('--thresh_general', type=float, default=1.0,
                     help='general threshold')
-parser.add_argument('--none_type', type=str2bool, default=False,
+parser.add_argument('--none_type', type=str2bool, default=True,
                     help='consider none type in evaluation.')
 
 args = parser.parse_args()
