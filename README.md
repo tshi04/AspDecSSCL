@@ -78,6 +78,16 @@ Before validation, you need to perform ```aspect mapping```. There is a file ```
 
 ```SSCLS clean``` python3 run.py --task student-clean
 
+## Citation
+
+```
+@article{shi2020simple,
+  title={A Simple and Effective Self-Supervised Contrastive Learning Framework for Aspect Detection},
+  author={Shi, Tian and Li, Liuqing and Wang, Ping and Reddy, Chandan K},
+  journal={arXiv preprint arXiv:2009.09107},
+  year={2020}
+}
+```
 
 
 
