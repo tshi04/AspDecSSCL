@@ -38,6 +38,7 @@ Please download processed dataset from here. Place them along side with AapDecSS
 |    |    |--- train_w2v.txt
 |--- cluster_results (results, automatically build)
 |--- nats_results (results, automatically build)
+|
 ```
 
 # Train your model from scratch
