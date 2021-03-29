@@ -15,6 +15,8 @@ This repository is a pytorch implementation for the following AAAI'21 paper:
 [Ping Wang](http://people.cs.vt.edu/ping/homepage/), 
 [Chandan K. Reddy](http://people.cs.vt.edu/~reddy/)
 
+[Video Presentation](https://www.youtube.com/watch?v=2Ug_hwYyJL8&ab_channel=Reddy%27sLab-VirginiaTech)
+
 ## Requirements
 
 - Python 3.6.9
