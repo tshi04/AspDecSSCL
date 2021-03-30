@@ -27,7 +27,8 @@ This repository is a pytorch implementation for the following AAAI'21 paper:
 
 # Dataset
 
-Please download processed dataset from here. Place them along side with AapDecSSCL.
+You can download processed dataset from [here](https://drive.google.com/drive/folders/1qMQ7wTQJ_DjTYWW2_TwWybzMDdSpjc7u?usp=sharing). 
+Place them along side with AapDecSSCL.
 
 ```bash
 |--- AspDecSSCL
