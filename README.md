@@ -25,6 +25,7 @@ This repository is a pytorch implementation for the following AAAI'21 paper:
 - torch=1.4.0
 - sklearn=0.22.2.post1
 - numpy=1.18.2
+- gensim=3.8.3
 
 # Dataset
 
